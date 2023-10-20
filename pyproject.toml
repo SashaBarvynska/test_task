@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "task"
+version = "0.0.1"
+description = ""
+authors = ["Andrew <47723945+AndrewLebowski@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.2.6"
+djangorestframework = "3.14.0"
+flake8 = "^6.1.0"
+isort = "^5.12.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+skip=".gitignore,venv"
+multi_line_output = 5
+include_trailing_comma = true
+lines_after_imports = 2
+lines_between_types = 1
+use_parentheses = true
+atomic = true
