@@ -1,8 +1,9 @@
-from .models import Team, Person
-from .serializers import TeamSerializer, PersonSerializer
 from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+
+from .models import Person, Team
+from .serializers import PersonSerializer, TeamSerializer
 
 
 @api_view(['GET', 'POST'])

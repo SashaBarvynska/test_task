@@ -1,6 +1,8 @@
 from django.urls import path
 from rest_framework.urlpatterns import format_suffix_patterns
+
 from task import views
+
 
 urlpatterns = [
     path('teams/', views.team_list),
